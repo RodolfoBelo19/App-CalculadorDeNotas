@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/nt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:hint="Nota1"
+        android:padding="20dp"
+        android:background="@color/gray_light"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="50dp"
+        android:inputType="number"
+        android:maxLength="2"
+        android:gravity="center"
+     />
+
+    <EditText
+        android:id="@+id/nt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:hint="Nota2"
+        android:padding="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="50dp"
+        android:background="@color/gray_light"
+        android:inputType="number"
+        android:maxLength="2"
+        android:gravity="center"
+        />
+
+    <EditText
+        android:id="@+id/nt3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:hint="Nota4"
+        android:padding="20dp"
+        android:layout_below="@id/nt1"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="50dp"
+        android:background="@color/gray_light"
+        android:inputType="number"
+        android:maxLength="2"
+        android:gravity="center"
+        />
+
+    <EditText
+        android:id="@+id/nt4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:hint="Nota4"
+        android:padding="20dp"
+        android:layout_below="@id/nt2"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="50dp"
+        android:background="@color/gray_light"
+        android:inputType="number"
+        android:maxLength="2"
+        android:gravity="center"
+        />
+
+    <EditText
+        android:id="@+id/n_faltas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:hint="Número de faltas"
+        android:padding="20dp"
+        android:background="@color/gray_light"
+        android:layout_below="@id/nt3"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:inputType="number"
+        android:maxLength="2"
+        android:gravity="center"
+        />
+
+    <Button
+        android:id="@+id/bt_calcular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:padding="20dp"
+        android:backgroundTint="@color/gray"
+        android:text="Calcular"
+        android:textAllCaps="false"
+        android:layout_below="@id/n_faltas"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        />
+
+    <TextView
+        android:id="@+id/txt_resultado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_below="@id/bt_calcular"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        />
+
+
+
+</RelativeLayout>
